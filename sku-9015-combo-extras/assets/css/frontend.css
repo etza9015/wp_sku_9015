@@ -1,0 +1,376 @@
+.sku_9015-combo {
+    width: 100%;
+    margin: 18px 0 22px;
+    color: #111;
+    font-family: inherit;
+    clear: both;
+}
+
+.sku_9015-combo * {
+    box-sizing: border-box;
+}
+
+.sku_9015-combo__head {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.sku_9015-combo__head h3 {
+    margin: 0 0 4px;
+    font-size: 17px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #111;
+}
+
+.sku_9015-combo__head p {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.sku_9015-combo__info {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #777;
+    vertical-align: middle;
+}
+
+.sku_9015-combo__switch {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.sku_9015-combo__switch-btn {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    color: #111;
+    padding: 11px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.sku_9015-combo__switch-btn:hover,
+.sku_9015-combo__switch-btn:focus {
+    border-color: #111;
+    outline: none;
+}
+
+.sku_9015-combo__switch-btn small {
+    display: block;
+    margin-top: 3px;
+    font-size: 10px;
+    color: #777;
+    font-weight: 400;
+}
+
+.sku_9015-combo__switch-btn.is-active {
+    border-color: #111;
+    box-shadow: inset 0 0 0 1px #111;
+}
+
+.sku_9015-combo__steps {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 12px 0 18px;
+}
+
+.sku_9015-combo__steps:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 12%;
+    right: 12%;
+    height: 2px;
+    background: #f25c5c;
+    z-index: 0;
+}
+
+.sku_9015-combo__step {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #222;
+}
+
+.sku_9015-combo__dot {
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: transparent;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.sku_9015-combo__step strong {
+    display: block;
+    font-size: 12px;
+    color: #222;
+    line-height: 1.1;
+}
+
+.sku_9015-combo__step small {
+    display: block;
+    font-size: 10px;
+    color: #777;
+}
+
+.sku_9015-combo__step.is-active .sku_9015-combo__dot {
+    background: #f24b4b;
+    border-color: #f24b4b;
+    color: #fff;
+    box-shadow: 0 0 0 3px rgba(242, 75, 75, 0.16);
+}
+
+.sku_9015-combo__step.is-active strong {
+    color: #f24b4b;
+}
+
+.sku_9015-combo__summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.sku_9015-combo__summary div {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 9px 8px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.sku_9015-combo__summary span {
+    display: block;
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 3px;
+}
+
+.sku_9015-combo__summary strong {
+    display: block;
+    font-size: 12px;
+    color: #111;
+}
+
+.sku_9015-combo__message {
+    margin: 8px 0 12px;
+    padding: 9px 10px;
+    background: #fff7df;
+    border: 1px solid #ffdf8a;
+    border-radius: 7px;
+    font-size: 12px;
+    color: #333;
+    line-height: 1.35;
+}
+
+.sku_9015-combo__message strong {
+    color: #111;
+}
+
+.sku_9015-combo__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sku_9015-combo__card {
+    position: relative;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+    padding: 10px;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.sku_9015-combo__card.is-selected {
+    border-color: #111;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+
+.sku_9015-combo__check {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.sku_9015-combo__check input {
+    display: none;
+}
+
+.sku_9015-combo__check span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: #e5e5e5;
+    color: transparent;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.sku_9015-combo__check input:checked + span {
+    background: #111;
+    color: #fff;
+}
+
+.sku_9015-combo__product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 28px;
+}
+
+.sku_9015-combo__image {
+    width: 54px;
+    height: 54px;
+    flex: 0 0 54px;
+    border-radius: 7px;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+.sku_9015-combo__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sku_9015-combo__data strong {
+    display: block;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #111;
+}
+
+.sku_9015-combo__data small {
+    display: block;
+    margin-top: 2px;
+    font-size: 10px;
+    color: #999;
+}
+
+.sku_9015-combo__price {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 3px;
+    font-size: 11px;
+}
+
+.sku_9015-combo__price span {
+    font-weight: 700;
+    color: #111;
+}
+
+.sku_9015-combo__select {
+    width: 100%;
+    margin-top: 9px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    min-height: 36px;
+    font-size: 12px;
+    color: #555;
+    background: #fff;
+    padding: 0 9px;
+}
+
+.sku_9015-combo__select.sku_9015-has-error {
+    border-color: #d63638;
+    box-shadow: 0 0 0 1px #d63638;
+}
+
+.sku_9015-combo__qty {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.sku_9015-combo__qty button {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #555;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sku_9015-combo__qty button:hover,
+.sku_9015-combo__qty button:focus {
+    border-color: #111;
+    color: #111;
+    outline: none;
+}
+
+.sku_9015-combo__qty input {
+    width: 42px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 13px;
+    padding: 0;
+}
+
+.sku_9015-combo__qty small {
+    margin-left: 5px;
+    font-size: 10px;
+    color: #aaa;
+}
+
+.sku_9015-combo.is-disabled .sku_9015-combo__list,
+.sku_9015-combo.is-disabled .sku_9015-combo__steps,
+.sku_9015-combo.is-disabled .sku_9015-combo__summary,
+.sku_9015-combo.is-disabled .sku_9015-combo__message {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .sku_9015-combo__summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sku_9015-combo__switch {
+        grid-template-columns: 1fr;
+    }
+}
